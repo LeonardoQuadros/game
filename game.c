@@ -55,13 +55,13 @@ void draw_map()
         for(j=0; j<150; j+=3)
         {
             if(map[i][j] == '|')
-                al_draw_scaled_bitmap(wall, 0, 0, 3, 3, j, i, 3, 3, 0);
+                al_draw_scaled_bitmap(wall, 0, 0, 19, 16, j, i, 3, 3, 0);
             if(map[i][j] == 'R')
-                al_draw_scaled_bitmap(stone, 0, 0, 3, 3, j, i, 3, 3, 0);
+                al_draw_scaled_bitmap(stone, 0, 0, 32, 32, j, i, 3, 3, 0);
             if(map[i][j] == 'O')
-                al_draw_scaled_bitmap(gem, 0, 0, 3, 3, j, i, 3, 3, 0);
+                al_draw_scaled_bitmap(gem, 0, 0, 26, 22, j, i, 3, 3, 0);
             if(map[i][j] == 'X')
-                al_draw_scaled_bitmap(position[player.pos], 0, 0, 3, 3, j, i, 3, 3, 0);
+                al_draw_scaled_bitmap(position[player.pos], 0, 0, 18, 29, j, i, 3, 3, 0);
         }
     }
 }
