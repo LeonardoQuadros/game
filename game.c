@@ -325,9 +325,7 @@ int main()
     al_destroy_bitmap(position[1]);
     al_destroy_bitmap(position[2]);
     al_destroy_bitmap(position[3]);
-    al_destroy_bitmap(position[4]);
     al_destroy_bitmap(buffer);
-    al_destroy_font(font);
     al_destroy_display(disp);
     al_destroy_timer(timer);
     al_destroy_event_queue(queue);
