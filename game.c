@@ -245,7 +245,7 @@ int main()
     al_install_audio();
     al_init_acodec_addon();
     al_reserve_samples(4);
-    sample_gem = al_load_sample("resources/coin.wav");
+    sample_gem = al_load_sample("resources/coin.ogg");
     must_init(sample_gem, "gem sample");
     font = al_create_builtin_font();
     must_init(font, "font");
