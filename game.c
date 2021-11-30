@@ -287,7 +287,7 @@ int main()
                 {
                     player_movement();
                     done = map_update();
-                    if(player.gems_collected = GEMS)
+                    if(player.gems_collected == GEMS)
                         done = true;
                 }
                 if(key[ALLEGRO_KEY_ESCAPE])
