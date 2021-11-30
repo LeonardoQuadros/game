@@ -253,8 +253,6 @@ int main()
     must_init(disp, "display");
     buffer = al_create_bitmap(150, 120);
     must_init(buffer, "bitmap buffer");
-    font = al_create_builtin_font();
-    must_init(font, "font");
     must_init(al_init_image_addon(), "image addon");
     stone = al_load_bitmap("resources/stone.png");
     must_init(stone, "stone");
