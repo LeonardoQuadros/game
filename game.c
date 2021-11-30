@@ -260,7 +260,7 @@ int main()
     must_init(stone, "stone");
     wall = al_load_bitmap("resources/wall.png");
     must_init(wall, "wall");
-    ALLEGRO_BITMAP* gem = al_load_bitmap("resources/stone.png");
+    ALLEGRO_BITMAP* gem = al_load_bitmap("resources/gem.png");
     must_init(gem, "gem");
     must_init(position, "position");
     position[0] = al_load_bitmap("resources/player0.jpg");
