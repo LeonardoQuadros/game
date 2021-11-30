@@ -49,7 +49,7 @@ void keyboard_update(ALLEGRO_EVENT* event)
 
 void draw_map()
 {
-    int i, j;
+    float i, j;
     for(i=0; i<120; i+=3)
     {
         for(j=0; j<150; j+=3)
