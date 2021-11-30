@@ -49,11 +49,13 @@ void keyboard_update(ALLEGRO_EVENT* event)
 
 void draw_map()
 {
-    float i, j;
+    int i, j;
     for(i=0; i<120; i+=3)
     {
+        y = i;
         for(j=0; j<150; j+=3)
         {
+            x = j;
             if(map[i][j] == '|')
                 al_draw_scaled_bitmap(wall, 0, 0, 19, 16, j, i, 3, 3, 0);
             if(map[i][j] == 'R')
