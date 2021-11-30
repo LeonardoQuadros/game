@@ -189,7 +189,7 @@ bool map_update()
 {
     int i, j, y, x;
     for(i=3;i<117;i+=3)
-        for(j=3;i<147;j+=3)
+        for(j=3;j<147;j+=3)
         {
             if(map[i][j] == 'R')
             {
