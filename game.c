@@ -346,7 +346,7 @@ int main()
             }
         }
     }
-    arq = fopen("resources/score","w");
+    arq = fopen("resources/score.txt","w");
     if (!arq)
     {
        fprintf(stderr,"Erro ao abrir/criar arquivo");
