@@ -288,7 +288,6 @@ int main()
             case ALLEGRO_EVENT_TIMER:
                 if(frames % 4 == 0 && !pause)
                 {
-                    done = map_update();
                     if(player.gems_collected == GEMS)
                         done = true;
                 }
