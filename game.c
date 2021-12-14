@@ -50,9 +50,9 @@ void keyboard_update(ALLEGRO_EVENT* event)
 void draw_map()
 {
     int i, j;
-    for(i=0; i<120; i+=30)
+    for(i=0; i<120; i+=3)
     {
-        for(j=0; j<150; j+=30)
+        for(j=0; j<150; j+=3)
         {
             if(map[i][j] == '|')
                 al_draw_scaled_bitmap(wall, 0, 0, 19, 16, 10*j, 10*i, 30, 30, 0);
@@ -288,7 +288,6 @@ int main()
             case ALLEGRO_EVENT_TIMER:
                 if(frames % 4 == 0 && !pause)
                 {
-                    player_movement();
                     done = map_update();
                     if(player.gems_collected == GEMS)
                         done = true;
